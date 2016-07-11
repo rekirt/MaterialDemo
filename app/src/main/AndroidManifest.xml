@@ -19,6 +19,10 @@
         </activity>
         <activity android:name=".ActionBarActivity" android:theme="@style/AppTheme">
         </activity>
+        <activity android:name=".DrawerWithToolBarActivity1" android:theme="@style/AppThemeNoTitle">
+        </activity>
+        <activity android:name=".DrawerWithToolBarActivity2" android:theme="@style/AppThemeNoTitle">
+        </activity>
     </application>
 
 </manifest>

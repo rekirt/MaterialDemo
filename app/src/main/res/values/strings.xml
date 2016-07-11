@@ -2,4 +2,9 @@
     <string name="app_name">MaterialDemo</string>
     <string name="action_search">搜索</string>
     <string name="action_share">分享</string>
+
+    <string name="action_settings">设置</string>
+    <string name="action_edit">编辑</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
 </resources>

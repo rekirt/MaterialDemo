@@ -2,13 +2,12 @@ package com.example.lc.materialdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     GridView gv_demo_list;
 
@@ -20,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1);
         adapter.add("ActionBar");
         adapter.add("CoordinatorLayout");
+        adapter.add("Drawer1");
+        adapter.add("Drawer2");
         gv_demo_list.setAdapter(adapter);
 
         gv_demo_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -32,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         intent = new Intent(getBaseContext(),CoordinatorLayoutActivity.class);
+                        break;
+                    case 2:
+                        intent = new Intent(getBaseContext(),DrawerWithToolBarActivity1.class);
+                        break;
+                    case 3:
+                        intent = new Intent(getBaseContext(),DrawerWithToolBarActivity2.class);
                         break;
                 }
                 startActivity(intent);

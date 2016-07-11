@@ -4,4 +4,20 @@
     <style name="AppTheme" parent="AppTheme.Base">
     </style>
 
+    <style name="AppThemeNoTitle" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">#88009688</item>
+        <!--將新加入的風格 AppTheme.MyDrawerStyle 設定給 drawerArrowStyle 這個屬性-->
+        <item name="drawerArrowStyle">@style/AppTheme.MyDrawerArrowStyle</item>
+    </style>
+    <!--设定导航按钮的样式-->
+    <style name="AppTheme.MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <!--將 spinBars 屬性設定為 false-->
+        <item name="spinBars">true</item>
+        <!--設定 drawer arrow 的顏色-->
+        <item name="color">@android:color/holo_red_light</item>
+    </style>
+
 </resources>
