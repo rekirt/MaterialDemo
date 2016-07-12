@@ -27,6 +27,8 @@
         </activity>
         <activity android:name=".DoubleDrawerWithToolBarActivity2" android:theme="@style/AppThemeBar">
         </activity>
+        <activity android:name=".palette.ToolBarPaletteActivity" android:theme="@style/AppThemeNoTitle">
+        </activity>
     </application>
 
 </manifest>

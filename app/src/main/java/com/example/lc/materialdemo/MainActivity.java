@@ -7,6 +7,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 
+import com.example.lc.materialdemo.palette.ToolBarPaletteActivity;
+
 public class MainActivity extends BaseActivity {
 
     GridView gv_demo_list;
@@ -23,6 +25,7 @@ public class MainActivity extends BaseActivity {
         adapter.add("Drawer2");
         adapter.add("DoubleDrawer1");
         adapter.add("DoubleDrawer2");
+        adapter.add("Palette");
         gv_demo_list.setAdapter(adapter);
 
         gv_demo_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -47,6 +50,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 5:
                         intent = new Intent(getBaseContext(),DoubleDrawerWithToolBarActivity2.class);
+                        break;
+                    case 6:
+                        intent = new Intent(getBaseContext(),ToolBarPaletteActivity.class);
                         break;
                 }
                 startActivity(intent);
