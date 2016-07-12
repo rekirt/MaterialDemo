@@ -21,6 +21,8 @@ public class MainActivity extends BaseActivity {
         adapter.add("CoordinatorLayout");
         adapter.add("Drawer1");
         adapter.add("Drawer2");
+        adapter.add("DoubleDrawer1");
+        adapter.add("DoubleDrawer2");
         gv_demo_list.setAdapter(adapter);
 
         gv_demo_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -39,6 +41,12 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 3:
                         intent = new Intent(getBaseContext(),DrawerWithToolBarActivity2.class);
+                        break;
+                    case 4:
+                        intent = new Intent(getBaseContext(),DoubleDrawerWithToolBarActivity.class);
+                        break;
+                    case 5:
+                        intent = new Intent(getBaseContext(),DoubleDrawerWithToolBarActivity2.class);
                         break;
                 }
                 startActivity(intent);

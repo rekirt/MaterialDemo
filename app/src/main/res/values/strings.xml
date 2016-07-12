@@ -7,4 +7,11 @@
     <string name="action_edit">编辑</string>
     <string name="drawer_open">Drawer Open</string>
     <string name="drawer_close">Drawer Close</string>
+    <string-array name="action_list">
+        <item>c语言</item>
+        <item>java </item>
+        <item>php</item>
+        <item>xml</item>
+        <item>html</item>
+    </string-array>
 </resources>

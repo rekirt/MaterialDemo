@@ -2,12 +2,15 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="AppTheme.Base">
-        <!-- Customize your theme here. -->
-        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
-        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
-        <!--<item name="colorAccent">@color/colorAccent</item>-->
-        <!--<item name="android:gravity">center</item>-->
+
     </style>
+
+    <style name="AppThemeBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
     <style name="AppThemeNoTitle" parent="AppTheme.Base">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
