@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 
 import com.example.lc.materialdemo.palette.ToolBarPaletteActivity;
+import com.example.lc.materialdemo.recyclerview.RecyclerViewActivity1;
 
 public class MainActivity extends BaseActivity {
 
@@ -26,6 +27,7 @@ public class MainActivity extends BaseActivity {
         adapter.add("DoubleDrawer1");
         adapter.add("DoubleDrawer2");
         adapter.add("Palette");
+        adapter.add("RecyclerView");
         gv_demo_list.setAdapter(adapter);
 
         gv_demo_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -53,6 +55,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 6:
                         intent = new Intent(getBaseContext(),ToolBarPaletteActivity.class);
+                        break;
+                    case 7:
+                        intent = new Intent(getBaseContext(),RecyclerViewActivity1.class);
                         break;
                 }
                 startActivity(intent);
