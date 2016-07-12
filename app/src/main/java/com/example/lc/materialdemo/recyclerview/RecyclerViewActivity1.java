@@ -55,7 +55,7 @@ public class RecyclerViewActivity1 extends BaseActivity {
         mRecyclerView.setAdapter(mAdapter = new HomeAdapter());
 
         //添加分割线
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.HORIZONTAL_LIST));
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL_LIST));
     }
 
 
