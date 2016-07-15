@@ -98,12 +98,10 @@ public class CoordinatorLayoutActivity extends BaseActivity {
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitleList.get(3)));
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitleList.get(4)));
 
-
         MyPagerAdapter mAdapter = new MyPagerAdapter(mViewList);
         mViewPager.setAdapter(mAdapter);//给ViewPager设置适配器
         mTabLayout.setupWithViewPager(mViewPager);//将TabLayout和ViewPager关联起来。
-        mTabLayout.setTabsFromPagerAdapter(mAdapter);//给Tabs设置适配器
-
+//        mTabLayout.setTabsFromPagerAdapter(mAdapter);//给Tabs设置适配器
     }
 
     //ViewPager适配器
