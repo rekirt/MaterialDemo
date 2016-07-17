@@ -33,21 +33,6 @@ public class CoordinatorLayoutActivity extends BaseActivity {
         setContentView(R.layout.activity_coordinator_layout);
 //        actionbar();
         toolbar();
-        findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view,"FAB", Snackbar.LENGTH_LONG)
-                        .setAction("cancel", new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                //这里的单击事件代表点击消除Action后的响应事件
-
-                            }
-                        })
-                        .show();
-            }
-        });
-
         tablayout_viewpager();
 
     }

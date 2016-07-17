@@ -9,13 +9,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.lc.materialdemo.MainActivity">
 
-    <GridView
+    <ListView
         android:id="@+id/gv_demo_list"
         android:layout_width="match_parent"
         android:numColumns="3"
         android:layout_height="match_parent">
 
-    </GridView>
+    </ListView>
 
 
 </RelativeLayout>

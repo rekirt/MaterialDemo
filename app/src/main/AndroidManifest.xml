@@ -31,6 +31,8 @@
         </activity>
         <activity android:name=".recyclerview.RecyclerViewActivity1" android:theme="@style/AppThemeBar" >
         </activity>
+        <activity android:name=".FloatingActionButtonDemo1" android:theme="@style/AppThemeBar" >
+        </activity>
     </application>
 
 </manifest>

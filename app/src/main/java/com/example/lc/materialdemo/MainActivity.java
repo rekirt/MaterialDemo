@@ -6,19 +6,20 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
+import android.widget.ListView;
 
 import com.example.lc.materialdemo.palette.ToolBarPaletteActivity;
 import com.example.lc.materialdemo.recyclerview.RecyclerViewActivity1;
 
 public class MainActivity extends BaseActivity {
 
-    GridView gv_demo_list;
+    ListView gv_demo_list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        gv_demo_list = (GridView)findViewById(R.id.gv_demo_list);
+        gv_demo_list = (ListView)findViewById(R.id.gv_demo_list);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1);
         adapter.add("ActionBar");
         adapter.add("CoordinatorLayout");
@@ -28,6 +29,7 @@ public class MainActivity extends BaseActivity {
         adapter.add("DoubleDrawer2");
         adapter.add("Palette");
         adapter.add("RecyclerView");
+        adapter.add("FloatingActionButton");
         gv_demo_list.setAdapter(adapter);
 
         gv_demo_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -58,6 +60,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 7:
                         intent = new Intent(getBaseContext(),RecyclerViewActivity1.class);
+                        break;
+                    case 8:
+                        intent = new Intent(getBaseContext(),FloatingActionButtonDemo1.class);
                         break;
                 }
                 startActivity(intent);
