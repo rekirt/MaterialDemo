@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fcf="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <at.technikum.mti.fancycoverflow.FancyCoverFlow
+        android:id="@+id/fancyCoverFlow"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fcf:maxRotation="180"
+        fcf:unselectedAlpha="0.1"
+        fcf:unselectedSaturation="0.0"
+        fcf:unselectedScale="0.1"
+        fcf:scaleDownGravity="0.1"
+        />
+</LinearLayout>

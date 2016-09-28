@@ -33,6 +33,13 @@
         </activity>
         <activity android:name=".FloatingActionButtonDemo1" android:theme="@style/AppThemeBar" >
         </activity>
+        <activity android:name=".FancyCoverFlowActivity" android:theme="@style/AppThemeBar" >
+        </activity>
+        <activity android:name=".customrecycleview.RecyclerViewCircleActivity" android:theme="@style/AppThemeBar" >
+        </activity>
+        <activity android:name=".customrecycleview.RecyclerViewCircleActivity3" android:theme="@style/AppThemeBar" >
+        </activity>
+
     </application>
 
 </manifest>
